@@ -3,6 +3,10 @@ function manageHeight(){
 	var headerHeight = $(".header").height();
 	var totalHeight = winHeight-headerHeight;
 	$(".content").css("height",totalHeight);
+
+	var bannerHeight = $('.banner').height();
+	var stepsInfoTop = headerHeight + bannerHeight;
+	$('.steps-info').css('top', stepsInfoTop + 20);
 }
 function validateForm() {
 	var x = document.forms["searchApplication"]["appNumber"].value;
